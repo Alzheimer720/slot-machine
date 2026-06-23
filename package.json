@@ -1,0 +1,23 @@
+{
+  "name": "slot-machine",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Alzheimer720/slot-machine#readme",
+  "bugs": {
+    "url": "https://github.com/Alzheimer720/slot-machine/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alzheimer720/slot-machine.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
