@@ -11,7 +11,7 @@ const resultMsg = document.getElementById("result-msg");
 const slotGrid = document.getElementById("slot-grid");
 depositBtn.addEventListener("click", () => {
     const amount = parseFloat(depositInput.value);
-    if (isNaN(amount) || amount <= 0) {
+    if (isNaN(amount)||amount<=0){
         depositMsg.innerText = "Invalid amount. Please try again.";
     } else {
         balance += amount;
@@ -24,11 +24,11 @@ depositBtn.addEventListener("click", () => {
 spinBtn.addEventListener("click", () => {
     const NumberofLines = parseFloat(linesInput.value);
     const Bet = parseFloat(betInput.value);
-    if (NumberofLines > 3 || NumberofLines < 1 || isNaN(NumberofLines)) {
+    if (NumberofLines>3||NumberofLines<1||isNaN(NumberofLines)){
         resultMsg.innerText = "Invalid number of lines, Please try again";
         return;
     }
-    if (isNaN(Bet) || Bet <= 0 || Bet > (balance / NumberofLines)) {
+    if (isNaN(Bet)||Bet<=0||Bet>(balance/NumberofLines)){
         resultMsg.innerText = "Invalid bet, try again.";
         return;
     }
@@ -39,8 +39,8 @@ spinBtn.addEventListener("click", () => {
     const rows = transpose(reels);
     
     slotGrid.innerHTML = ""; 
-    for (const row of rows) {
-        for (const symbol of row) {
+    for (const row of rows){
+        for (const symbol of row){
             const div = document.createElement("div");
             div.classList.add("slot-item");
             div.innerText = symbol;
@@ -48,13 +48,13 @@ spinBtn.addEventListener("click", () => {
         }
     }
 
-    const winnings = getWinnings(rows, Bet, NumberofLines);
+    const winnings=getWinnings(rows, Bet, NumberofLines);
     balance += winnings;
     balanceDisplay.innerText = balance;
-    if (winnings > 0) {
+    if (winnings>0){
         resultMsg.innerText = "You won, ₹" + winnings;
         resultMsg.className = "win-text";
-    } else {
+    }else{
         resultMsg.innerText = "You won ₹0. Try again!";
         resultMsg.className = "";
     }
