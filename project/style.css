@@ -1,4 +1,4 @@
-body {
+body{
     background-color: #1a1a2e;
     color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -8,8 +8,7 @@ body {
     min-height: 100vh;
     margin: 0;
 }
-
-.container {
+.container{
     background-color: #16213e;
     padding: 30px;
     border-radius: 15px;
@@ -18,19 +17,16 @@ body {
     max-width: 500px;
     width: 100%;
 }
-
-h1 { color: #e94560; }
-h2 { margin-bottom: 10px; }
-
-.input-group {
-    margin: 15px 0;
+h1{color: #e94560;}
+h2{margin-bottom: 10px;}
+.input-group{
+    margin:15px 0;
     display: flex;
     justify-content: center;
     gap: 10px;
     align-items: center;
 }
-
-input {
+input{
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -39,8 +35,7 @@ input {
     font-size: 16px;
     width: 120px;
 }
-
-button {
+button{
     background-color: #e94560;
     color: white;
     border: none;
@@ -51,17 +46,14 @@ button {
     font-weight: bold;
     transition: background-color 0.2s;
 }
-
-button:hover { background-color: #d1304b; }
-#spin-btn {
+button:hover{background-color: #d1304b;}
+#spin-btn{
     font-size: 24px;
     padding: 15px 40px;
     margin-top: 20px;
     width: 100%;
 }
-
-/* The Slot Machine Grid */
-.slot-machine {
+.slot-machine{
     background-color: #000;
     padding: 20px;
     border-radius: 10px;
@@ -69,13 +61,13 @@ button:hover { background-color: #d1304b; }
     margin: 20px 0;
 }
 
-.grid {
+.grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
-.slot-item {
+.slot-item{
     background-color: #0f3460;
     font-size: 40px;
     padding: 20px 0;
@@ -86,5 +78,5 @@ button:hover { background-color: #d1304b; }
     font-weight: bold;
 }
 
-.error-text { color: #ff6b6b; font-size: 14px; }
-.win-text { color: #4cd137; }
+.error-text{color:#ff6b6b;font-size:14px;}
+.win-text{color:#4cd137;}
